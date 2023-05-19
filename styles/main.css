@@ -1,0 +1,56 @@
+:root {
+  --teacher-primary-bg: #e9a606;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.admin-page {
+  display: flex;
+  height: 100%;
+}
+
+.admin-panel {
+  width: 200px;
+  background: var(--teacher-primary-bg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.admin-panel ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-panel ul li {
+  margin-bottom: 10px;
+}
+
+.admin-panel ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.my-account {
+  margin-top: auto;
+}
+
+.my-account a {
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.content-panel {
+  flex: 1;
+  padding: 20px;
+}
