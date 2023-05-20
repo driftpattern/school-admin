@@ -1,5 +1,7 @@
 :root {
   --teacher-primary-bg: #e9a606;
+  --text-color-dark: #333;
+  --text-color-light: #fff;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
@@ -11,7 +13,7 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
-.admin-page {
+.container {
   display: flex;
   height: 100%;
 }
@@ -25,19 +27,34 @@ html, body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.admin-panel ul {
+.admin-panel-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin-panel-header i {
+  cursor: pointer;
+  color: var(--text-color-light);
+  font-size: 20px;
+}
+
+.admin-links {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.admin-panel ul li {
+.admin-links li {
   margin-bottom: 10px;
 }
 
-.admin-panel ul li a {
+.admin-links li a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color-dark);
+}
+
+.admin-links i {
+  margin-right: 4px;
 }
 
 .my-account {
@@ -46,11 +63,15 @@ html, body {
 
 .my-account a {
   display: block;
-  color: #fff;
+  color: var(--text-color-light);
   margin-bottom: 10px;
 }
 
 .content-panel {
   flex: 1;
   padding: 20px;
+}
+
+.content-panel h1 {
+  color: var(--text-color-dark);
 }
