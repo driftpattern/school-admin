@@ -1,3 +1,5 @@
+/* main.css */
+
 :root {
   --teacher-primary-bg: #e9a606;
   --text-color-dark: #333;
@@ -74,4 +76,8 @@ html, body {
 
 .content-panel h1 {
   color: var(--text-color-dark);
+}
+
+.content-panel {
+  background: url('https://subtlepatterns.com/patterns/creampaper.png');
 }

@@ -1,0 +1,23 @@
+/* hamburger.css */
+
+:root {
+    --text-color-light: #fff;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  label:before {
+    content: "\f0c9"; /* Font Awesome hamburger icon (fa-bars) */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--text-color-light);
+  }
+  
+  input[type="checkbox"]:checked + label:before {
+    content: "\f00d"; /* Font Awesome X icon (fa-times) */
+    color: var(--text-color-light);
+  }
+  
