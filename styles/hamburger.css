@@ -1,9 +1,5 @@
-/* hamburger.css */
+/* hamburgerize that checkbox */
 
-:root {
-    --text-color-light: #fff;
-  }
-  
   input[type="checkbox"] {
     display: none;
   }
@@ -20,4 +16,4 @@
     content: "\f00d"; /* Font Awesome X icon (fa-times) */
     color: var(--text-color-light);
   }
-  
+

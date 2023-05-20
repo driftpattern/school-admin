@@ -4,6 +4,7 @@
   --teacher-primary-bg: #e9a606;
   --text-color-dark: #333;
   --text-color-light: #fff;
+  --content-panel-bg: url('https://subtlepatterns.com/patterns/creampaper.png');
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
@@ -34,7 +35,7 @@ html, body {
   justify-content: flex-end;
 }
 
-.admin-panel-header i {
+.admin-panel-header label {
   cursor: pointer;
   color: var(--text-color-light);
   font-size: 20px;
@@ -72,12 +73,9 @@ html, body {
 .content-panel {
   flex: 1;
   padding: 20px;
+  background: var(--content-panel-bg);
 }
 
 .content-panel h1 {
   color: var(--text-color-dark);
-}
-
-.content-panel {
-  background: url('https://subtlepatterns.com/patterns/creampaper.png');
 }
