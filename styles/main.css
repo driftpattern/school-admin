@@ -5,6 +5,8 @@
   --text-color-dark: #333;
   --text-color-light: #fff;
   --content-panel-bg: url('https://subtlepatterns.com/patterns/creampaper.png');
+  --hamburger-fg: var(--text-color-light);
+  --hamburger-bg: var(--text-color-dark);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
@@ -37,7 +39,7 @@ html, body {
 
 .admin-panel-header label {
   cursor: pointer;
-  color: var(--text-color-light);
+  color: var(--hamburger-fg);
   font-size: 20px;
 }
 
@@ -79,3 +81,4 @@ html, body {
 .content-panel h1 {
   color: var(--text-color-dark);
 }
+

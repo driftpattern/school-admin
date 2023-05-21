@@ -1,6 +1,6 @@
 /* hamburgerize that checkbox */
 
-  input[type="checkbox"] {
+input[type="checkbox"] {
     display: none;
   }
   
@@ -9,11 +9,20 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 20px;
-    color: var(--text-color-light);
+    color: var(--hamburger-fg);
   }
   
   input[type="checkbox"]:checked + label:before {
     content: "\f00d"; /* Font Awesome X icon (fa-times) */
-    color: var(--text-color-light);
+    color: var(--hamburger-fg);
   }
-
+  
+  .admin-panel-header label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Set a fixed width for the square */
+    height: 40px; /* Set a fixed height for the square */
+    background-color: var(--hamburger-bg);
+  }
+  
