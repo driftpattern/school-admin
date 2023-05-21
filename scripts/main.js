@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     var checkbox = document.querySelector('.hamburger-checkbox');
+    var adminPanel = document.querySelector('.admin-panel');
     
     checkbox.addEventListener('change', function() {
       if (checkbox.checked) {
-        console.log("Checkbox is checked");
+        adminPanel.classList.add('collapsed');
       } else {
-        console.log("Checkbox is unchecked");
+        adminPanel.classList.remove('collapsed');
       }
     });
   });
-  

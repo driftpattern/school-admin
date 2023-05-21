@@ -77,3 +77,9 @@ html, body {
   color: var(--text-color-dark);
 }
 
+/* interactivity */
+.collapsed {
+  width: 40px; /* todo: make calc burgerbox + padding */
+  padding-left: 10px; 
+  transition: width 0.25s ease-in-out, padding-left 0.3s ease-in-out;
+}
