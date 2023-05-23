@@ -427,3 +427,92 @@ h1 {
   color: #e9a606;
   font-size: 18px;
 }
+
+
+
+  /*******************/
+ /*   my account    */
+/*******************/
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #e9a606;
+  color: #fff;
+}
+
+.data-table td:first-child {
+  width: 150px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-group input[type="password"]:focus {
+  outline: none;
+}
+
+.form-group input[type="password"]::placeholder {
+  color: #999;
+}
+
+button[type="submit"] {
+  background-color: #e9a606;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.image-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.image-area img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #e9a606;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}

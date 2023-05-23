@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SBA307: Teacher's Admin</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/hamburger.css">
+  <script src="scripts/main.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <nav class="admin-panel">
+
+      <div class="admin-panel-header">
+        <input type="checkbox" class="hamburger-checkbox" id="toggleAdminPanel">
+        <label for="toggleAdminPanel" class="hamburger-label" tabindex="0"></label>
+      </div>
+
+      <ul class="admin-links">
+        <li><a href="students.html" class="text"><i class="fas fa-users"></i> Students</a></li>
+        <li><a href="classes.html" class="text"><i class="fas fa-chalkboard"></i> Classes</a></li>
+        <li><a href="assignments.html" class="text"><i class="fas fa-tasks"></i> Assignments</a></li>
+        <li><a href="grades.html" class="text"><i class="fas fa-chart-bar"></i> Grades</a></li>
+        <li><a href="reports.html" class="text"><i class="fas fa-file-alt"></i> Reports</a></li>
+      </ul>
+
+      <ul class="my-account">
+        <li><a href="#" class="text"><i class="fas fa-user"></i> My Account</a></li>
+        <li><a href="#" class="text"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+
+    </nav>
+
+    <div class="content-panel">
+      
+      
+
+        
+
+
+      <header>
+        <h1>My Account</h1>
+      </header>
+      <div class="content-area">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Details</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="fas fa-envelope"></i> Email Address</td>
+              <td>example@example.com</td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-user"></i> Name</td>
+              <td>John Doe</td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-user-tag"></i> Title</td>
+              <td>Teacher</td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-users-cog"></i> Access Level</td>
+              <td>
+                <select name="accessLevel">
+                  <option value="admin">Admin</option>
+                  <option value="student">Student</option>
+                  <option value="teacher">Teacher</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Change Password</h2>
+        <form>
+          <div class="form-group">
+            <label for="currentPassword"><i class="fas fa-lock"></i> Current Password</label>
+            <input type="password" id="currentPassword" name="currentPassword" required>
+          </div>
+          <div class="form-group">
+            <label for="newPassword"><i class="fas fa-lock"></i> New Password</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+          </div>
+          <div class="form-group">
+            <label for="repeatPassword"><i class="fas fa-lock"></i> Repeat New Password</label>
+            <input type="password" id="repeatPassword" name="repeatPassword" required>
+          </div>
+          <button type="submit">Save Password</button>
+        </form>
+      </div>
+      <div class="image-area">
+        <img src="path/to/user-placeholder.jpg" alt="User Image">
+        <div class="edit-icon"><i class="fas fa-pencil-alt"></i></div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+
+</body>
+</html>
