@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SBA307: Teacher's Admin</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/hamburger.css">
+  <script src="scripts/main.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <nav class="admin-panel">
+
+      <div class="admin-panel-header">
+        <input type="checkbox" class="hamburger-checkbox" id="toggleAdminPanel">
+        <label for="toggleAdminPanel" class="hamburger-label" tabindex="0"></label>
+      </div>
+
+      <ul class="admin-links">
+        <li><a href="students.html" class="text"><i class="fas fa-users"></i> Students</a></li>
+        <li><a href="classes.html" class="text"><i class="fas fa-chalkboard"></i> Classes</a></li>
+        <li><a href="assignments.html" class="text"><i class="fas fa-tasks"></i> Assignments</a></li>
+        <li><a href="grades.html" class="text"><i class="fas fa-chart-bar"></i> Grades</a></li>
+        <li><a href="reports.html" class="text"><i class="fas fa-file-alt"></i> Reports</a></li>
+      </ul>
+
+      <ul class="my-account">
+        <li><a href="#" class="text"><i class="fas fa-user"></i> My Account</a></li>
+        <li><a href="#" class="text"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+
+    </nav>
+
+    <div class="content-panel">
+      <div class="buttons">
+        <button>New</button>
+        <button>Bulk Edit</button>
+        <button>Advanced</button>
+      </div>
+      <table class="classes-table">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Course ID</th>
+            <th>Teacher</th>
+            <th>Room</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mathematics</td>
+            <td>MATH101</td>
+            <td>John Doe</td>
+            <td>Room 101</td>
+            <td><i class="fas fa-info-circle"></i></td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>ENG101</td>
+            <td>Jane Smith</td>
+            <td>Room 201</td>
+            <td><i class="fas fa-info-circle"></i></td>
+          </tr>
+          <tr>
+            <td>Science</td>
+            <td>SCI101</td>
+            <td>David Johnson</td>
+            <td>Room 301</td>
+            <td><i class="fas fa-info-circle"></i></td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </div>
+    
+
+  </div>
+
+</body>
+</html>
