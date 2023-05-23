@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SBA307: Teacher's Admin</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/hamburger.css">
+  <script src="scripts/main.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <nav class="admin-panel">
+
+      <div class="admin-panel-header">
+        <input type="checkbox" class="hamburger-checkbox" id="toggleAdminPanel">
+        <label for="toggleAdminPanel" class="hamburger-label" tabindex="0"></label>
+      </div>
+
+      <ul class="admin-links">
+        <li><a href="#" class="text"><i class="fas fa-users"></i> Students</a></li>
+        <li><a href="#" class="text"><i class="fas fa-chalkboard"></i> Classes</a></li>
+        <li><a href="#" class="text"><i class="fas fa-tasks"></i> Assignments</a></li>
+        <li><a href="#" class="text"><i class="fas fa-chart-bar"></i> Grades</a></li>
+        <li><a href="#" class="text"><i class="fas fa-file-alt"></i> Reports</a></li>
+      </ul>
+
+      <ul class="my-account">
+        <li><a href="#" class="text"><i class="fas fa-user"></i> My Account</a></li>
+        <li><a href="#" class="text"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+
+    </nav>
+
+    <div class="content-panel">
+      <div class="buttons">
+        <button class="add-student"><i class="fas fa-plus"></i> Add Student</button>
+        <button class="bulk-edit"><i class="fas fa-pencil-alt"></i> Bulk Edit</button>
+        <button class="advanced"><i class="fas fa-cogs"></i> Advanced</button>
+      </div>
+      <div class="table-container">
+        <table class="students-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>ID#</th>
+              <th>Enroll date</th>
+              <th>Status</th>
+              <th></th> <!-- For the edit icon -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name One</td>
+              <td>123</td>
+              <td>2022-01-01</td>
+              <td>Active</td>
+              <td><i class="fas fa-pencil-alt"></i></td>
+            </tr>
+            <tr>
+              <td>Name Two</td>
+              <td>456</td>
+              <td>2022-02-01</td>
+              <td>Active</td>
+              <td><i class="fas fa-pencil-alt"></i></td>
+            </tr>
+            <tr>
+              <td>Name Three</td>
+              <td>789</td>
+              <td>2022-03-01</td>
+              <td>Inactive</td>
+              <td><i class="fas fa-pencil-alt"></i></td>
+            </tr>
+            <tr>
+              <td>Name Four</td>
+              <td>987</td>
+              <td>2022-04-01</td>
+              <td>Active</td>
+              <td><i class="fas fa-pencil-alt"></i></td>
+            </tr>
+            <tr>
+              <td>Name Five</td>
+              <td>654</td>
+              <td>2022-05-01</td>
+              <td>Inactive</td>
+              <td><i class="fas fa-pencil-alt"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+  </div>
+
+</body>
+</html>
