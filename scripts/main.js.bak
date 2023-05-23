@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var adminPanel = document.querySelector('.admin-panel');
   var hamburgerButton = document.querySelector('.hamburger-checkbox ~ label');
 
-  /* here check local storage */
-
   checkbox.addEventListener('change', function() {
     var label = this.nextElementSibling;
   
