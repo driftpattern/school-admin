@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>SBA307: School Admin</title>
+  <title>SBA307: Teacher's Admin</title>
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -29,8 +29,8 @@
       </ul>
 
       <ul class="my-account">
-        <li><a href="myaccount.html" class="text"><i class="fas fa-user"></i> My Account</a></li>
-        <li><a href="logout.html" class="text"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        <li><a href="#" class="text"><i class="fas fa-user"></i> My Account</a></li>
+        <li><a href="#" class="text"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
       </ul>
 
     </nav>
@@ -43,11 +43,6 @@
 
 
       <header>
-        <div class="image-container">
-          <img src="images/mr-goldenfold1.png" class="user-image" alt="User Image">
-          <div class="edit-icon"><i class="fas fa-pencil-alt"></i></div>
-        </div>
-  
         <h1>My Account</h1>
       </header>
       <div class="content-area">
@@ -61,11 +56,11 @@
           <tbody>
             <tr>
               <td><i class="fas fa-envelope"></i> Email Address</td>
-              <td>MGoldenfold@HarryHerpsonHS.dom</td>
+              <td>example@example.com</td>
             </tr>
             <tr>
               <td><i class="fas fa-user"></i> Name</td>
-              <td>Mr. Goldenfold</td>
+              <td>John Doe</td>
             </tr>
             <tr>
               <td><i class="fas fa-user-tag"></i> Title</td>
@@ -84,10 +79,6 @@
           </tbody>
         </table>
 
-
-
-
-
         <h2>Change Password</h2>
         <form>
           <div class="form-group">
@@ -105,7 +96,11 @@
           <button type="submit">Save Password</button>
         </form>
       </div>
-      
+      <div class="image-area">
+        <img src="path/to/user-placeholder.jpg" alt="User Image">
+        <div class="edit-icon"><i class="fas fa-pencil-alt"></i></div>
+      </div>
+
 
 
 

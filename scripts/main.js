@@ -1,3 +1,5 @@
+/* todo: set localstorage to retain collapsed/expand state */
+
 document.addEventListener("DOMContentLoaded", function() {
   var checkbox = document.querySelector('.hamburger-checkbox');
   var adminPanel = document.querySelector('.admin-panel');
