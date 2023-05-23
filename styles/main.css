@@ -58,7 +58,6 @@ html, body {
 
 .admin-links {
   list-style-type: none;
-  /* padding-top: 20px; */
   margin: 20px;
   /* background-color:burlywood; */
   z-index: 2;
@@ -80,7 +79,7 @@ html, body {
 }
 
 .my-account {
-  width: 160px;
+  list-style-type: none;
   margin-top: auto;
   margin: 20px;
   /* background-color:burlywood; */
@@ -89,15 +88,14 @@ html, body {
   z-index: 2;
 }
 
-.my-account a {
+.my-account li a {
   margin-top: 20px;
-  display: block;
+  display: contents;
   color: var(--text-color-light);
 }
 
 .admin-links i::before,
 .my-account i::before {
-  /* content: ""; */
   display: flex;
   width: 30px;
   height: 30px;
@@ -105,10 +103,8 @@ html, body {
   border-color: rgba(255, 174, 0, 0);
   background-color: rgba(255, 174, 0, 0);
   position: relative;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
-  /* margin-right: 10px; Adjust as needed */
   z-index: 0;
 }
 
