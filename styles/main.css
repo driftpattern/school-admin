@@ -51,7 +51,7 @@ html, body {
   display: flex;
   justify-content: flex-end;
   padding-inline-start: 0px;
-  background-color: darkkhaki;
+  /* background-color: darkkhaki; */
   margin: 20px;
   z-index: 2;
 }
@@ -113,7 +113,7 @@ html, body {
   /* background-color: rgba(255, 174, 0, 1); */
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 30px rgb(255, 136, 0);
-  transition: all .1s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 .content-panel {
@@ -128,12 +128,11 @@ html, body {
 
 /* collapsed modifications */
 .collapsed {
-  /* width: 74px; */
   width: var(--collapsed-width);
   transition: width 0.25s ease-in-out, padding-left 0.3s ease-in-out;
 }
 
-
+/* todo: find alt method. this is hacky */
 .collapsed .admin-links a.text,
 .collapsed .my-account a.text {
   font-size: 0;
@@ -144,7 +143,7 @@ html, body {
 
 .collapsed .admin-links a.text i,
 .collapsed .my-account a.text i {
-  font-size: 16px; /* Adjust the font size to your desired value */
+  font-size: 16px; /* todo: try bigger size */
   line-height: 1;
   text-indent: 0;
   overflow: visible;

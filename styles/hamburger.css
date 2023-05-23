@@ -1,4 +1,8 @@
-/* hamburgerize the checkbox */
+/* implementation of my own "hamburgerized" checkbox  */
+/* posted to codepen in case class wants to use it   */
+/* https://codepen.io/destructographic/pen/XWxyLYw  */
+/*                                                 */
+/* ---------------------------------------------- */
 
 :root {
     --hamburger-box-size: 30px;
@@ -12,7 +16,7 @@
   }
   
   .hamburger-label:before {
-    content: "\f0c9"; /* Font Awesome hamburger icon (fa-bars) */
+    content: "\f068"; /* Font Awesome minimize icon (fa-minus) */
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 20px;
@@ -21,7 +25,7 @@
   }
   
   .hamburger-checkbox:checked + .hamburger-label:before {
-    content: "\f00d"; /* Font Awesome X icon (fa-times) */
+    content: "\f0c9"; /* Font Awesome hamburger icon (fa-bars) */
     color: var(--hamburger-fg);
   }
   
@@ -40,4 +44,18 @@
 .hamburger-label:hover {
   box-shadow: 0px 0px 30px rgb(255, 136, 0);
   transition: all .2s ease-in-out;
+}
+
+
+/*
+.hamburger-checkbox:checked ~ .admin-panel-header .hamburger-box {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+*/
+
+/* interactivity */
+.collapsed .hamburger-checkbox ~ label {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
 }
