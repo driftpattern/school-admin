@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
   var hamburgerButton = document.querySelector('.hamburger-checkbox ~ label');
 
   /* here check local storage */
+  var isCollapsed = localStorage.getItem('isCollapsed');
+  if (isCollapsed) {
+    checkbox.checked = true;
+    adminPanel.classList.add('collapsed');
+  }
 
   checkbox.addEventListener('change', function() {
     var label = this.nextElementSibling;
@@ -14,10 +19,13 @@ document.addEventListener("DOMContentLoaded", function() {
       adminPanel.classList.add('collapsed');
       label.classList.add('collapsed');
       /* hamburgerButton.style.transform = 'rotate(180deg)'; */
+      localStorage.setItem('isCollapsed', 'true');
     } else {
       adminPanel.classList.remove('collapsed');
       label.classList.remove('collapsed');
       /* hamburgerButton.style.transform = 'rotate(0deg)'; */
+      /* instead of setting isCollapsed = false, better to just remove */
+      localStorage.removeItem('isCollapsed');
     }
   });
 });

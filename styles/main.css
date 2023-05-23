@@ -150,6 +150,10 @@ html, body {
   overflow: visible;
 }
 
+.logout-message {
+  text-align: center;
+}
+
 
   /*********************************/
  /*       content section         */
@@ -184,41 +188,6 @@ html, body {
 }
 
 /* table */
-.students-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.students-table th,
-.students-table td {
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-.students-table th:last-child,
-.students-table td:last-child {
-  text-align: center;
-}
-
-.students-table tbody tr:hover {
-  background-color: #f9f9f9;
-}
-
-.students-table td:last-child {
-  padding-right: 0;
-}
-
-.students-table i {
-  color: #e9a606;
-  cursor: pointer;
-}
-
-.students-table i:hover {
-  color: #c98e04;
-}
-
-/* Table */
 .classes-table {
   width: 100%;
   border-collapse: collapse;
@@ -280,25 +249,6 @@ h1 {
   cursor: pointer;
 }
 
-.assignments-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.assignments-table th,
-.assignments-table td {
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
-
-.assignments-table th {
-  text-align: left;
-}
-
-.assignments-table td:last-child {
-  text-align: center;
-}
-
 .fa-book {
   color: #e9a606;
 }
@@ -326,25 +276,6 @@ h1 {
   cursor: pointer;
 }
 
-.grades-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.grades-table th,
-.grades-table td {
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
-
-.grades-table th {
-  text-align: left;
-}
-
-.grades-table td:last-child {
-  text-align: center;
-}
-
 .fa-pen-to-square {
   color: #e9a606;
 }
@@ -368,7 +299,7 @@ h1 {
   margin-right: 5px;
 }
 
-/* Data Table */
+/* data table */
 .data-table {
   width: 100%;
   border-collapse: collapse;
@@ -390,7 +321,7 @@ h1 {
   background-color: #f9f9f9;
 }
 
-/* Report Generate Icon */
+/* report generate icon */
 .data-table td:last-child {
   text-align: center;
 }
