@@ -4,7 +4,7 @@
   --teacher-primary-bg: #e9a606;
   --text-color-dark: #333;
   --text-color-light: #fff;
-  --content-panel-bg: url('https://subtlepatterns.com/patterns/creampaper.png');
+  --content-panel-bg: url('images/creampaper.png');
   --admin-panel-gap: 20px;
   --hamburger-fg: var(--text-color-light);
   --hamburger-bg: var(--text-color-dark);
@@ -44,7 +44,8 @@ html, body {
   grid-gap: var(--admin-panel-gap); /* gap between items */
   grid-template-rows: min-content auto; /* first row to fit content and remaining rows auto-adjust */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  /* z-index: 1; */
+  transition: width 0.3s ease-in-out;
 }
 
 .admin-panel-header {
@@ -53,18 +54,18 @@ html, body {
   padding-inline-start: 0px;
   /* background-color: darkkhaki; */
   margin: 20px;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .admin-links {
   list-style-type: none;
   margin: 20px;
   /* background-color:burlywood; */
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .admin-links li {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .admin-links li a {
@@ -75,7 +76,7 @@ html, body {
 
 .admin-links i {
   margin-right: 4px;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 .my-account {
@@ -85,7 +86,7 @@ html, body {
   /* background-color:burlywood; */
   position: absolute; 
   bottom: 0;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .my-account li a {
@@ -105,7 +106,7 @@ html, body {
   position: relative;
   justify-content: center;
   align-items: center;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .admin-links i:hover::before,
@@ -113,7 +114,7 @@ html, body {
   /* background-color: rgba(255, 174, 0, 1); */
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 30px rgb(255, 136, 0);
-  transition: all .25s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .content-panel {
@@ -129,7 +130,7 @@ html, body {
 /* collapsed modifications */
 .collapsed {
   width: var(--collapsed-width);
-  transition: width 0.25s ease-in-out, padding-left 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, padding-left 0.3s ease-in-out;
 }
 
 /* todo: find alt method. this is hacky */

@@ -54,8 +54,11 @@
 }
 */
 
-/* interactivity */
-.collapsed .hamburger-checkbox ~ label {
-  transform: rotate(180deg);
+/* animation */
+.hamburger-checkbox ~ label {
   transition: transform 0.3s ease-in-out;
+}
+
+.hamburger-checkbox:checked ~ label {
+  transform: rotate(180deg);
 }
