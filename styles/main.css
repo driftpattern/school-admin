@@ -5,11 +5,25 @@
   --text-color-dark: #333;
   --text-color-light: #fff;
   --content-panel-bg: url('https://subtlepatterns.com/patterns/creampaper.png');
+  --admin-panel-gap: 20px;
   --hamburger-fg: var(--text-color-light);
   --hamburger-bg: var(--text-color-dark);
+
+  
+  --collapsed-width: calc(
+    2 * var(--hamburger-border) +
+    var(--hamburger-box-size) +
+    2 * var(--admin-panel-gap)
+    );
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* universal css reset */
+* {
+  padding: 0px;
+  margin: 0px;
+}
 
 html, body {
   margin: 0;
@@ -21,27 +35,33 @@ html, body {
 .container {
   display: flex;
   height: 100%;
+  z-index: 0;
 }
 
 .admin-panel {
   width: 200px;
   background: var(--teacher-primary-bg);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
+  grid-gap: var(--admin-panel-gap); /* gap between items */
+  grid-template-rows: min-content auto; /* first row to fit content and remaining rows auto-adjust */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .admin-panel-header {
   display: flex;
   justify-content: flex-end;
-  /* background-color: aquamarine; */
+  padding-inline-start: 0px;
+  background-color: darkkhaki;
+  margin: 20px;
+  z-index: 2;
 }
 
 .admin-links {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  /* padding-top: 20px; */
+  margin: 20px;
+  /* background-color:burlywood; */
+  z-index: 2;
 }
 
 .admin-links li {
@@ -50,22 +70,56 @@ html, body {
 
 .admin-links li a {
   text-decoration: none;
+  display: contents;
   color: var(--text-color-dark);
 }
 
 .admin-links i {
   margin-right: 4px;
+  z-index: 3;
 }
 
 .my-account {
+  width: 160px;
   margin-top: auto;
+  margin: 20px;
+  /* background-color:burlywood; */
+  position: absolute; 
+  bottom: 0;
+  z-index: 2;
 }
 
 .my-account a {
+  margin-top: 20px;
   display: block;
   color: var(--text-color-light);
-  margin-bottom: 10px;
 }
+
+.admin-links i::before,
+.my-account i::before {
+  /* content: ""; */
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 2px solid;
+  border-color: rgba(255, 255, 255, 0.0);
+  position: relative;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 10px; Adjust as needed */
+  z-index: 0;
+}
+
+
+
+.admin-links i:hover::before,
+.my-account i:hover::before {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
 
 .content-panel {
   flex: 1;
@@ -77,9 +131,24 @@ html, body {
   color: var(--text-color-dark);
 }
 
-/* interactivity */
+/* collapsed modifications */
 .collapsed {
-  width: 40px; /* todo: make calc burgerbox + padding */
-  padding-left: 10px; 
+  width: 74px;
+  /* width: var(--collapsed-width); */
   transition: width 0.25s ease-in-out, padding-left 0.3s ease-in-out;
+}
+
+/*
+.admin-links.collapsed li a {
+  display: none;
+}
+
+.my-account.collapsed a {
+  display: none;
+}
+*/
+
+.collapsed .admin-links a::before,
+.collapsed .my-account a::before {
+  content: "";
 }
